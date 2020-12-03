@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="hangman">
+        <h1>HANGMAN</h1>
+        <div class="verdict">
+          <p class="lose">>GAME OVER</p>
+          <p class="win">>YOU WIN</p>
+        </div>
+        <article id="row">
+          <div id="player-guess-container">
+            <div class="key_row_one">
+              <button class="q guess">Q</button>
+              <button class="w guess">W</button>
+              <button class="e guess">E</button>
+              <button class="r guess">R</button>
+              <button class="t guess">T</button>
+              <button class="y guess">Y</button>
+              <button class="u guess">U</button>
+              <button class="i guess">I</button>
+              <button class="o guess">O</button>
+              <button class="p guess">P</button>
+            </div>
+            <div class="key_row_two">
+              <button class="a guess">A</button>
+              <button class="s guess">S</button>
+              <button class="d guess">D</button>
+              <button class="f guess">F</button>
+              <button class="g guess">G</button>
+              <button class="h guess">H</button>
+              <button class="j guess">J</button>
+              <button class="k guess">K</button>
+              <button class="l guess">L</button>
+            </div>
+            <div class="key_row_three">
+              <button class="z guess">Z</button>
+              <button class="x guess">X</button>
+              <button class="c guess">C</button>
+              <button class="v guess">V</button>
+              <button class="b guess">B</button>
+              <button class="n guess">N</button>
+              <button class="m guess">M</button>
+            </div>
+            <button id="new-game">NEW GAME</button>
+          </div>
+          <div id="player-status">
+              <div class="bad_guess"></div>
+              <svg width="210" height="210" xmlns="http://www.w3.org/2000/svg">
+                <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+               
+                <g stroke="null">
+                 <title>background</title>
+                 <rect x="-1" y="-1" width="212" height="212" id="canvas_background" stroke="null"/>
+                 <g id="canvasGrid" display="none" stroke="null">
+                  <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+                 </g>
+                </g>
+                <g stroke="null">
+                 <title>Layer 1</title>
+                 <rect stroke="#000" class="gallow" fill="#B9FFCE" stroke-width="0" x="45.31816" y="15.45313" width="5" height="183" id="svg_4"/>
+                 <rect stroke="#000" class="gallow" fill="#B9FFCE" stroke-width="0" stroke-opacity="null" x="5.0242" y="195.99992" width="123.5334" height="5.6" id="svg_5"/>
+                 <rect stroke="#000" class="gallow" fill="#B9FFCE" stroke-width="0" stroke-opacity="null" x="45.8182" y="12.99997" width="101.79999" height="5.6" id="svg_7"/>
+                 <rect stroke="#000" class="gallow" fill="#B9FFCE" stroke-width="0" stroke-opacity="null" x="140.62423" y="13.75755" width="7.2" height="41.52731" id="svg_17"/>
+                 <ellipse stroke="#000" class="head" fill="#B9FFCE" stroke-width="0" stroke-opacity="null" cx="144.24857" cy="63.78917" id="svg_18" rx="13.00608" ry="12.80002"/>
+                 <rect stroke="#000" class="neck" fill="#B9FFCE" stroke-width="0" x="143.06048" y="72.23257" width="2.4" height="23.0788" id="svg_32"/>
+                 <rect transform="rotate(139.71775817871094 136.7581787109375,85.96707153320314) " stroke="#000" class="left_arm" fill="#B9FFCE" stroke-width="0" x="135.5082" y="74.90763" width="2.49995" height="22.11887" id="svg_36"/>
+                 <rect stroke="#000" class="torso" fill="#B9FFCE" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="143.34801" y="94.23871" width="2.08696" height="20.48228" id="svg_38"/>
+                 <rect transform="rotate(38.08864974975586 151.6085357666016,85.35657501220703) " stroke="#000" class="right_arm" fill="#B9FFCE" stroke-width="0" x="150.35855" y="73.68631" width="2.49995" height="23.34053" id="svg_34"/>
+                 <rect transform="rotate(-146.4536590576172 137.6775360107422,123.99925231933595) " stroke="#000" class="left_leg" fill="#B9FFCE" stroke-width="0" x="136.42756" y="111.37273" width="2.49995" height="25.25304" id="svg_41"/>
+                 <rect transform="rotate(-30.7056827545166 150.40476989746102,123.9992446899414) " stroke="#000" class="right_leg" fill="#B9FFCE" stroke-width="0" x="149.15481" y="111.37273" width="2.49995" height="25.25304" id="svg_2"/>
+                </g>
+               </svg>
+          </div>
+        </article>
+        <div id="word-container">
+          <div id="current-word">
+          </div>
+        </div>
+      </section>
+      <script src="script.js"></script>
+</body>
+</html>
