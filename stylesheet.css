@@ -25,19 +25,26 @@ body {
     margin: 0 auto;
     transition: .3s;
   }
+
+  .description {
+    color: #D3E7F1;
+  }
   
-  #new-game {
+  .new_game {
     height: 50px;
     width: 100px;
     margin: 10px;
     cursor: pointer;
     background: none;
-    color: #E2C6F4;
-    border: solid #ccc7cf 1px;
+    color: #B9FFCE;
+    border: solid #B9FFCE 1px;
+    outline: none;
+    opacity: .5;
   }
 
-  #new-game:hover {
-    color: #E2C6F4;
+  .new_game:hover {
+    border: solid #B9FFCE 2px;
+    opacity: 1;
   }
 
 
@@ -49,7 +56,7 @@ body {
     display: none;
     margin: 0;
     font-size: 40pt;
-    color: red;
+    color: rgb(146, 60, 135);
     font-family: 'Press Start 2P', cursive;
   }
 
@@ -87,10 +94,19 @@ body {
     font-size: 1em;
     color: white;
     background: #7FB3D5;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 5px 5px 19px -2px #000000; 
+    box-shadow: 5px 5px 19px -2px #000000;
+    border-radius: 10px;
   }
 
   #player-guess-container .guess:hover {
     box-shadow: inset 3px 2px 3px silver;
+  }
+
+  #player-guess-container .guess:disabled {
+    opacity: .5;
   }
   
 
@@ -120,10 +136,11 @@ body {
   
   .test {
     width: 40px;
-    height: 20px;
+    height: 30px;
     border-bottom: solid black 1px;
     margin-right: 20px;
     color: #D3E7F1;
+    font-size: 20pt;
   }
 
   @media(max-width: 700px) {
